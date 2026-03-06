@@ -30,7 +30,7 @@ def select_menu_item():
     value = input('Выберите пункт: ')
 
     if value.isdigit():
-        return int(value) if 1 <= int(value) <= 4 else 0
+        return int(value) if 1 <= int(value) <= 5 else 0
 
     print(f'Некорректный ввод". Повторите.')
     return select_menu_item()

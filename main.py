@@ -2,7 +2,7 @@ from module.age import get_age
 from module.check import is_leap_year
 from module.day_of_week import get_day_of_week
 from module.input import select_menu_item, input_birthday
-from module.output import output_menu, get_text_for_digits, print_date
+from module.output import output_menu, get_text_for_digits, print_date, print_all
 
 fl_exit = True
 while fl_exit:
@@ -20,5 +20,7 @@ while fl_exit:
     elif item_menu == 4:
         year, month, day = input_birthday()
         print(f"На сегодня вам {get_age(day, month, year)} лет.")
+    elif item_menu == 5:
+        print_all()
     else:
         fl_exit = False
